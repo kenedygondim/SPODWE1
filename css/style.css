@@ -25,9 +25,13 @@ section {
     width: 70%;
     height: auto;
     margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .div-atividade {
+    margin-top: 2em;
     border-radius: 10px;
     border: 1px solid #000;
     display: flex;
