@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário de cadastro</h1>
+    </header>
+
+
+    <form> 
+        <label for="name">Nome e sobrenome</label>
+        <input type="text" name="" id="name">
+
+        <label for="email">Email</label>
+        <input placeholder="exemplo@email.com" type="email" name="" id="email"> 
+
+        <label for="telephone">Telefone</label>
+        <input placeholder="(xx) xxxxx-xxxx" type="text" name="" id="telephone">
+
+        <label for="message">Mensagem</label>
+        <input type="text" name="" id="message">
+
+        <div id="div-checkboxes">
+
+            <h6>Como prefere o nosso contato?</h6>
+
+            <div class="radios">
+                <label for="radio-email">Email</label>
+                <input type="radio" name="radio-sel" id="radio-email">
+            </div>
+
+
+            <div class="radios">
+                <label for="radio-telephone">Telefone</label>
+                <input type="radio" name="radio-sel" id="radio-telephone">
+            </div>
+
+
+            <div class="radios">
+                <label for="radio-whatsapp">Whatsapp</label>
+                <input type="radio" name="radio-sel" id="radio-whatsapp">
+            </div>
+        </div>
+        
+        <div id="div-selects">
+
+            <h6>Qual horário deseja ser atendido?</h6>
+
+            <select name="" id="">
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+            </select>
+        </div>
+
+        <div id="div-checkbox">
+            <input type="checkbox" name="" id="checkbox">
+            <label for="checkbox">Gostaria de receber nossas novidades por email?</label>
+        </div>
+        
+        <div id="btn-div-btn-send">
+            <button id="btn-send-form">
+                Enviar formulário
+            </button>
+        </div>
+    </form>
+
+    <div id="div-table">
+        <table>
+            <tr>
+                <th>Dia</th>
+                <th>Horários</th>
+            </tr>
+            <tr>
+                <td>Segunda</td>
+                <td>8 - 20hrs</td>
+            </tr>
+            <tr>
+                <td>Terça</td>
+                <td>8 - 20hrs</td>
+            </tr>
+            <tr>
+                <td>Quarta</td>
+                <td>8 - 20hrs</td>
+            </tr>
+            <tr>
+                <td>Quinta</td>
+                <td>8 - 20hrs</td>
+            </tr>
+        
+            <tr>
+                <td>Sexta</td>
+                <td>8 - 20hrs</td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <h1>Desenvolvido por Kenedy Alves Gondim</h1>
+    </footer>
+
+
+</body>
+</html>

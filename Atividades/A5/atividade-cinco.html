@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Básica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Exercício</th>
+                <th>Resolução</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Select the plates</td>
+                <td>plate</td>
+            </tr>
+            <tr>
+                <td>Select the bento boxes</td>
+                <td>bento</td>
+            </tr>
+            <tr>
+                <td>Select the fancy plate</td>
+                <td>#fancy</td>
+            </tr>
+            <tr>
+                <td>Select the apple on the plate</td>
+                <td>plate apple</td>
+            </tr>
+            <tr>
+                <td>Select the pickle on the fancy plate</td>
+                <td>#fancy  pickle</td>
+            </tr>
+            <tr>
+                <td>Select the small apples</td>
+                <td>.small</td>
+            </tr>
+            <tr>
+                <td>Select the small oranges</td>
+                <td>orange.small</td>
+            </tr>
+            <tr>
+                <td>Select the small oranges in the bentos</td>
+                <td>bento > orange.small</td>
+            </tr>
+            <tr>
+                <td>Select all the plates and bentos</td>
+                <td>plate, bento</td>
+            </tr>
+            <tr>
+                <td>Select all the things!</td>
+                <td>*</td>
+            </tr>
+            <tr>
+                <td>Select everything on a plate</td>
+                <td>plate *</td>
+            </tr>
+            <tr>
+                <td>Select every apple that's next to a plate</td>
+                <td>plate + apple</td>
+            </tr>
+            <tr>
+                <td>Select every pickle to the right of the bento</td>
+                <td>bento ~ pickle </td>
+            </tr>
+            <tr>
+                <td>Select the apple directly on a plate</td>
+                <td>plate > apple</td>
+            </tr>
+            <tr>
+                <td>Select the top orange</td>
+                <td>orange:first-child</td>
+            </tr>
+            <tr>
+                <td>Select the apple and the pickle on the plates</td>
+                <td>apple,pickle:only-child</td>
+            </tr>
+            <tr>
+                <td>Select the small apple and the pickle</td>
+                <td>apple.small, pickle:last:child</td>
+            </tr>
+            <tr>
+                <td>Select the 3rd plate</td>
+                <td>plate:nth-child(3)</td>
+            </tr>
+            <tr>
+                <td>Select the 1st bento</td>
+                <td>bento:nth-last-child(4)</td>
+            </tr>
+            <tr>
+                <td>Select first apple</td>
+                <td>apple:first-of-type</td>
+            </tr>
+            <tr>
+                <td>Select all even plates</td>
+                <td>plate:nth-of-type(even)</td>
+            </tr>
+            <tr>
+                <td>Select every 2nd plate, starting from the 3rd</td>
+                <td>plate:nth-of-type(2n+3)</td>
+            </tr>
+            <tr>
+                <td>Select the apple on the middle plate.</td>
+                <td>Não feito</td>
+            </tr>
+            <tr>
+                <td>Select the second apple and orange</td>
+                <td>apple.small:only-of-type</td>
+            </tr>
+            <tr>
+                <td>Select the second apple and orange</td>
+                <td>Não feito</td>
+            </tr>
+            <tr>
+                <td>Select the empty bentos</td>
+                <td>bento:empty</td>
+            </tr>
+            <tr>
+                <td>Select the big apples</td>
+                <td>apple:not(.small)</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>
