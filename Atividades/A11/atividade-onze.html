@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de API</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Formulário de endereço com campos preenchidos automaticamente por meio da API do ViaCep</h1>
+    <div class="fundo-escuro">
+        <div id="popup">
+            <div id="step-3" class="form-section">
+                <h3 class="title-info">Endereço</h3>
+                <div class="form-group-inline">
+                    <div class="form-group">
+                        <label for="cep">CEP: </label>
+                        <input type="text" id="cep" required maxlength="8" placeholder="12345678" class="inf-endereco">
+                        <div class="error-message" id="cep-error"></div>
+                        <br>
+                    </div>
+                    <div class="form-group">
+                        <label for="uf">UF: </label>
+                        <input type="text" id="uf" required disabled placeholder="Campo com preenchimento automático. Insira seu CEP.">
+                        <br>
+                    </div>
+                    <div class="form-group">
+                        <label for="municipio">Município: </label>
+                        <input type="text" id="municipio" required disabled placeholder="Campo com preenchimento automático. Insira seu CEP.">
+                        <br>
+                    </div>
+                </div>
+        
+                <div class="form-group-inline">
+                    <div class="form-group">
+                        <label for="bairro">Bairro: </label>
+                        <input type="text" id="bairro" required disabled placeholder="Campo com preenchimento automático. Insira seu CEP.">
+                        <br>
+                    </div>
+                    <div class="form-group">
+                        <label for="logradouro">Logradouro: </label>
+                        <input type="text" id="logradouro" required disabled placeholder="Campo com preenchimento automático. Insira seu CEP.">
+                        <br>
+                    </div>
+                </div>
+        
+                <div class="form-group-inline">
+                    <div class="form-group">
+                        <label for="numero">Número: </label>
+                        <input type="text" id="numero" required placeholder="123" class="inf-endereco">
+                        <div class="error-message" id="numero-error"></div>
+                        <br>
+                    </div>
+                    <div class="form-group">
+                        <label for="complemento">Complemento: </label>
+                        <input type="text" id="complemento" placeholder="Casa, Apartamento, Bloco, etc.">
+                        <div class="error-message" id="complemento-error"></div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
